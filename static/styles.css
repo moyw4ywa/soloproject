@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f1f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.image-container {
+    flex: 2; /* Adjust image container to take more space */
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 100%; /* Ensure the image doesn't overflow */
+    object-fit: cover;
+}
+
+.chat-container {
+    flex: 3; /* Adjust chat container to take remaining space */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    max-height: 75vh; /* Set chat container height to 3/4 of the viewport height */
+}
+
+.title {
+    color: #c2185b; /* Pinkish purple color */
+    text-align: center;
+    font-size: 2.5em;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid rgba(194, 24, 91, 0.5); /* Pinkish purple border with reduced opacity */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #c2185b; /* Pinkish purple color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 30%; /* Ensure button takes full width of its container */
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #ad1457; /* Darker pinkish purple color */
+}
+
+.result, .content-result, .gemini-result {
+    background-color: #fce4ec; /* Light pink background */
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+    white-space: pre-line; /* Preserve white space and new lines */
+}
+
+.content-result, .gemini-result {
+    background-color: #fce4ec; /* Light pink background */
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #c2185b; /* Pinkish purple color */
+    margin-top: 0;
+}
+
+.error {
+    color: red;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>📸Flipgram's Assistant</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='cartoon_bot.png') }}" alt="Flipgram">
+        </div>
+        <div class="chat-container">
+            <h1 class="title">Chat With Flipgram's AI</h1>
+            <form method="POST">
+                <input type="text" name="user_input" placeholder="Enter your post or comment prompt:" value="{{ user_input if user_input else '' }}">
+                <button type="submit">Craft Ideas</button>
+            </form>
+            {% if content %}
+                <div class="result content-result">
+                    <h2>Social Savy, Tips and Tricks:</h2>
+                    <div>{{ content | safe }}</div>
+                </div>
+            {% endif %}
+            {% if gemini_response %}
+                <div class="result gemini-result">
+                    <h2>FlipBot's Response:</h2>
+                    <div>{{ gemini_response | safe }}</div>
+                </div>
+            {% endif %}
+            {% if error %}
+                <p class="error">{{ error }}</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
