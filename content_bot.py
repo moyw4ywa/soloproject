@@ -17,8 +17,8 @@ class ContentBot:
         self.model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
         self.index = self.create_faiss_index()
 
-        # Initialize sentiment analysis pipeline
-        self.sentiment_analyzer = pipeline('sentiment-analysis')
+        # Initialize sentiment analysis pipeline with a specific model
+        self.sentiment_analyzer = pipeline('sentiment-analysis', model='cardiffnlp/twitter-roberta-base-sentiment')
 
     def create_faiss_index(self):
         # Convert content texts to vectors
