@@ -17,7 +17,14 @@ Ensure you have python 3.7+ installed
 6. Ensure gemini_api.py and content_bot.py files are running to avoid issues when running the main flask app file. Run using
     `python gemini_api.py` and 
     `python content_bot.py`
-7. Start the flask web app using `python app.py` and navigate to `http://127.0.0.1:5000/` on your web browser. 
+7. Start the flask web app using `python app.py` and navigate to `http://127.0.0.1:5000/` on your web browser.
+
+
+#Additional links and resources
+1. Deployed site `https://422d-41-80-112-165.ngrok-free.app/`
+2. Project Proposal `https://docs.google.com/document/d/1AZWFVOH8JmMJED2tlJmjKMOeokGtPn2a/edit?usp=sharing&ouid=114221883145004173843&rtpof=true&sd=true`
+3. Project Documentation `https://docs.google.com/document/d/1SP1pfKsHqZ3MvM83LqnkZ-9Kol2Ozaqx/edit?usp=sharing&ouid=114221883145004173843&rtpof=true&sd=true`
+4. Meta's Community Guidelines `https://transparency.meta.com/en-gb/policies/community-standards/`
 
  
 
