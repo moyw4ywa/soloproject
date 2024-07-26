@@ -20,7 +20,7 @@ Ensure you have python 3.7+ installed
 7. Start the flask web app using `python app.py` and navigate to `http://127.0.0.1:5000/` on your web browser.
 
 
-#Additional links and resources
+# Additional links and resources
 
 1. Deployed site `https://422d-41-80-112-165.ngrok-free.app/`
 2. Project Proposal `https://docs.google.com/document/d/1AZWFVOH8JmMJED2tlJmjKMOeokGtPn2a/edit?usp=sharing&ouid=114221883145004173843&rtpof=true&sd=true`
