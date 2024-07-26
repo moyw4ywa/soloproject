@@ -21,6 +21,7 @@ Ensure you have python 3.7+ installed
 
 
 #Additional links and resources
+
 1. Deployed site `https://422d-41-80-112-165.ngrok-free.app/`
 2. Project Proposal `https://docs.google.com/document/d/1AZWFVOH8JmMJED2tlJmjKMOeokGtPn2a/edit?usp=sharing&ouid=114221883145004173843&rtpof=true&sd=true`
 3. Project Documentation `https://docs.google.com/document/d/1SP1pfKsHqZ3MvM83LqnkZ-9Kol2Ozaqx/edit?usp=sharing&ouid=114221883145004173843&rtpof=true&sd=true`
