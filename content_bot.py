@@ -44,7 +44,7 @@ class ContentBot:
         return most_relevant_content
 
     def flag_inappropriate_content(self, content):
-        # Enhanced inappropriate content detection
+        # Inappropriate content detection
 
         # List of inappropriate keywords
         inappropriate_keywords = [
@@ -62,7 +62,7 @@ class ContentBot:
         
         # Simple regex patterns for explicit content
         explicit_patterns = [
-            r'\b(?:sex|porn|nude|drugs)\b',  # Add more patterns as needed
+            r'\b(?:sex|porn|nude|drugs)\b',  
         ]
         if any(re.search(pattern, content, re.IGNORECASE) for pattern in explicit_patterns):
             return True

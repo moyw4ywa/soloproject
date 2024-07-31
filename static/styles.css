@@ -7,6 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-color: #e0f7fa; /* Light blue background */
 }
 
 .container {
@@ -18,33 +19,37 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    border: 3px solid #ffeb3b; /* Yellow border */
+    min-height: 80vh; /* Increase overall flex box height */
 }
 
 .image-container {
-    flex: 2; /* Adjust image container to take more space */
+    flex: 2;
     background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%; /* Make image container height 100% */
 }
 
 .image-container img {
     width: 100%;
-    height: auto;
-    max-height: 100%; /* Ensure the image doesn't overflow */
+    height: auto; /* Ensure the image maintains its aspect ratio */
+    max-height: 100%;
     object-fit: cover;
 }
 
 .chat-container {
-    flex: 3; /* Adjust chat container to take remaining space */
+    flex: 3;
     padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;
-    max-height: 75vh; /* Set chat container height to 3/4 of the viewport height */
+    max-height: 75vh;
+    background-color: #ffffff; /* White background for chat container */
 }
 
 .title {
-    color: #c2185b; /* Pinkish purple color */
+    color: #0288d1; /* Blue color */
     text-align: center;
     font-size: 2.5em;
 }
@@ -57,46 +62,46 @@ input[type="text"] {
     width: calc(100% - 22px);
     padding: 10px;
     margin-top: 10px;
-    border: 2px solid rgba(194, 24, 91, 0.5); /* Pinkish purple border with reduced opacity */
+    border: 2px solid rgba(2, 136, 209, 0.5); /* Blue border with reduced opacity */
     border-radius: 5px;
     box-sizing: border-box;
 }
 
 button {
-    background-color: #c2185b; /* Pinkish purple color */
+    background-color: #0288d1; /* Blue color */
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
-    width: 30%; /* Ensure button takes full width of its container */
+    width: 30%;
     box-sizing: border-box;
 }
 
 button:hover {
-    background-color: #ad1457; /* Darker pinkish purple color */
+    background-color: #0277bd; /* Darker blue color */
 }
 
 .result, .content-result, .gemini-result {
-    background-color: #fce4ec; /* Light pink background */
+    background-color: #e1f5fe; /* Light blue background */
     padding: 15px;
     border-radius: 6px;
     margin-top: 20px;
-    white-space: pre-line; /* Preserve white space and new lines */
+    white-space: pre-line;
 }
 
-.content-result, .gemini-result {
-    background-color: #fce4ec; /* Light pink background */
-    padding: 15px;
-    border-radius: 6px;
-    margin-top: 20px;
-}
+.gemini-response {
+    font-size: 1em; 
+    line-height: 1.5rem; 
+
+.gemini-response strong {
+    font-weight: bold; 
 
 h2 {
-    color: #c2185b; /* Pinkish purple color */
+    color: #0288d1; /* Blue color */
     margin-top: 0;
-}
+    margin-bottom: 5px; 
 
 .error {
     color: red;
